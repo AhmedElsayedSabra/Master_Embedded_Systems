@@ -1,0 +1,11 @@
+// lets start 
+1) make the object file of your library 
+$ ./gcc.exe -C can.c -o can_object_file.o
+2) after make the objects file , make the static library 
+$ ./ar.exe rcs static_lib_of_can.a can_object_file.o
+3) to link the static library with main file during the compilation 
+$./gcc.exe main.c static_lib_of-can.a -o main.exe
+4) to run the main program 
+$ ./main.exe
+
+// enjoy  
